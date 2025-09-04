@@ -21,7 +21,7 @@ function App() {
       id: 2,
       title: "Master x Lee sin",
       description: "E agora uma partidona de LoL pra vencer os herói.",
-      iframe: '<iframe src="https://drive.google.com/file/d/1_4Jw2FZNNlMXYxFawug-uTuLjDKAQVfF/preview" width="640" height="480" allow="autoplay"></iframe>',
+      iframe: '<iframe src="https://drive.google.com/file/d/1ahjlhu8hY7D0QOQGM6h1PJyi2qO0Bd8H/view" width="640" height="480" allow="autoplay"></iframe>',
       likes: 12,
       comments: [
         { id: 3, user: "Pedro Costa", text: "Masteziao cabuloso!", timestamp: "2024-01-16 09:15" }
