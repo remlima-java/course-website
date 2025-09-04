@@ -9,22 +9,22 @@ function App() {
     {
       id: 1,
       title: "Introdução ao Curso",
-      description: "Bem-vindos ao nosso curso! Neste vídeo introdutório, vamos apresentar o que você vai aprender.",
-      iframe: '<iframe src="https://drive.google.com/file/d/1YN2SzE1_HbhZCwRxRmwchiudqB0XJ9u9/preview" width="640" height="480" allow="autoplay"></iframe>',
+      description: "Bem-vindos ao nosso curso! Neste vídeo introdutório, vamos apresentar como fuder com a vida de um pai de familia!.",
+      iframe: '<iframe src="https://drive.google.com/file/d/1Djl62QDBz5mt0pe-wYK1UfoFfZNazrsh/preview" width="640" height="480" allow="autoplay"></iframe>',
       likes: 15,
       comments: [
-        { id: 1, user: "João Silva", text: "Ótima introdução! Estou animado para o curso.", timestamp: "2024-01-15 10:30" },
-        { id: 2, user: "Maria Santos", text: "Muito claro e objetivo. Parabéns!", timestamp: "2024-01-15 14:20" }
+        { id: 1, user: "João Silva", text: "Banco safado, vou cancelar minha conta.", timestamp: "2024-01-15 10:30" },
+        { id: 2, user: "Maria Santos", text: "Muita sacanagem", timestamp: "2024-01-15 14:20" }
       ]
     },
     {
       id: 2,
-      title: "Conceitos Fundamentais",
-      description: "Neste segundo vídeo, vamos abordar os conceitos fundamentais que você precisa conhecer.",
+      title: "Master x Lee sin",
+      description: "E agora uma partidona de LoL pra vencer os herói.",
       iframe: '<iframe src="https://drive.google.com/file/d/1_4Jw2FZNNlMXYxFawug-uTuLjDKAQVfF/preview" width="640" height="480" allow="autoplay"></iframe>',
       likes: 12,
       comments: [
-        { id: 3, user: "Pedro Costa", text: "Explicação muito didática!", timestamp: "2024-01-16 09:15" }
+        { id: 3, user: "Pedro Costa", text: "Masteziao cabuloso!", timestamp: "2024-01-16 09:15" }
       ]
     }
   ]
