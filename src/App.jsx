@@ -9,24 +9,36 @@ function App() {
     {
       id: 1,
       title: "Introdução ao Curso",
-      description: "Bem-vindos ao nosso curso! Neste vídeo introdutório, vamos apresentar como fuder com a vida de um pai de familia!.",
-      iframe: '<iframe src="https://drive.google.com/file/d/1Djl62QDBz5mt0pe-wYK1UfoFfZNazrsh/preview" width="640" height="480" allow="autoplay"></iframe>',
+      description: "Bem-vindos ao nosso curso! Neste vídeo introdutório, vamos falar sobre o que será abordado no curso.",
+      iframe: '<iframe src="https://drive.google.com/file/d/1z8_QW-PCrdXouK9lQhRZjQdsPT7uqBfN/preview" width="640" height="480" allow="autoplay"></iframe>',
       likes: 15,
       comments: [
-        { id: 1, user: "João Silva", text: "Banco safado, vou cancelar minha conta.", timestamp: "2024-01-15 10:30" },
-        { id: 2, user: "Maria Santos", text: "Muita sacanagem", timestamp: "2024-01-15 14:20" }
+        { id: 1, user: "Bigode", text: "Curso top", timestamp: "2025-09-11 18:22" },
+        { id: 2, user: "Raul", text: "Vou focar nessa linguagem", timestamp: "2025-09-11 14:20" }
       ]
     },
     {
       id: 2,
-      title: "Master x Lee sin",
-      description: "E agora uma partidona de LoL pra vencer os herói.",
-      iframe: '<iframe src="https://drive.google.com/file/d/1ahjlhu8hY7D0QOQGM6h1PJyi2qO0Bd8H/preview" width="640" height="480" allow="autoplay"></iframe>',
+      title: "Introdução ao Curso parte 2",
+      description: "Continuando a introdução",
+      iframe: '<iframe src="https://drive.google.com/file/d/1HPbzroU-dyEWwaHlpVkWn06xxCpcPNrV/preview" width="640" height="480" allow="autoplay"></iframe>',
       likes: 12,
       comments: [
-        { id: 3, user: "Pedro Costa", text: "Masteziao cabuloso!", timestamp: "2024-01-16 09:15" }
+        { id: 3, user: "Pedro Costa", text: "top demais", timestamp: "2025-09-11 18:22" },
       ]
-    }
+    },
+
+      {
+          id: 3,
+          title: "Introdução ao Curso parte 3",
+          description: "Bora pro vamos ver. ",
+          iframe: '<iframe src="https://drive.google.com/file/d/1j0h1Yt8Ehw0mWeHhhyNW8ag1miKobKR-/preview" width="640" height="480" allow="autoplay"></iframe>',
+          likes: 12,
+          comments: [
+              { id: 3, user: "Pedro Costa", text: "top demais", timestamp: "2025-09-11 18:22" },
+          ]
+      }
+
   ]
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
@@ -37,8 +49,8 @@ function App() {
   const currentVideo = videos[currentVideoIndex]
 
   const handleLike = () => {
-    setVideoLikes(prev => prev.map(v => 
-      v.id === currentVideo.id 
+    setVideoLikes(prev => prev.map(v =>
+      v.id === currentVideo.id
         ? { ...v, likes: v.liked ? v.likes - 1 : v.likes + 1, liked: !v.liked }
         : v
     ))
@@ -48,13 +60,13 @@ function App() {
     if (newComment.trim()) {
       const comment = {
         id: Date.now(),
-        user: "Usuário Anônimo",
+        user: "Usuário Anónimo",
         text: newComment,
         timestamp: new Date().toLocaleString('pt-BR')
       }
-      
-      setComments(prev => prev.map(v => 
-        v.id === currentVideo.id 
+
+      setComments(prev => prev.map(v =>
+        v.id === currentVideo.id
           ? { ...v, comments: [...v.comments, comment] }
           : v
       ))
@@ -104,7 +116,7 @@ function App() {
                 <ChevronLeft className="h-4 w-4" />
               </Button>
             </div>
-            
+
             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10">
               <Button
                 variant="outline"
@@ -119,7 +131,7 @@ function App() {
 
             {/* Video Container */}
             <div className="flex justify-center p-8 bg-gray-50">
-              <div 
+              <div
                 className="w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden shadow-lg"
                 dangerouslySetInnerHTML={{ __html: currentVideo.iframe.replace('width="640" height="480"', 'width="100%" height="100%"') }}
               />
@@ -136,7 +148,7 @@ function App() {
                   <span>Vídeo {currentVideoIndex + 1} de {videos.length}</span>
                 </div>
               </div>
-              
+
               {/* Like Button */}
               <div className="flex items-center space-x-2">
                 <Button
