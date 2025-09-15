@@ -10,7 +10,7 @@ function App() {
       id: 1,
       title: "Introdução ao Curso",
       description: "Bem-vindos ao nosso curso! Neste vídeo introdutório, vamos falar sobre o que será abordado no curso.",
-      iframe: '<iframe src="https://drive.google.com/file/d/1z8_QW-PCrdXouK9lQhRZjQdsPT7uqBfN/preview" width="640" height="480" allow="autoplay"></iframe>',
+      iframe: '<iframe src="https://drive.google.com/file/d/1fKcvRw5THmjoXixRE3Mf59QlVskO_1MS/preview" width="640" height="480" allow="autoplay"></iframe>',
       likes: 15,
       comments: [
         { id: 1, user: "Bigode", text: "Curso top", timestamp: "2025-09-11 18:22" },
@@ -21,7 +21,7 @@ function App() {
       id: 2,
       title: "Introdução ao Curso parte 2",
       description: "Continuando a introdução",
-      iframe: '<iframe src="https://drive.google.com/file/d/1HPbzroU-dyEWwaHlpVkWn06xxCpcPNrV/preview" width="640" height="480" allow="autoplay"></iframe>',
+      iframe: '<iframe src="https://drive.google.com/file/d/1gZ3gEZu2f4NhZJ_cYu1bSI6C_s4hrI5R/preview" width="640" height="480" allow="autoplay"></iframe>',
       likes: 12,
       comments: [
         { id: 3, user: "Pedro Costa", text: "top demais", timestamp: "2025-09-11 18:22" },
@@ -31,8 +31,8 @@ function App() {
       {
           id: 3,
           title: "Introdução ao Curso parte 3",
-          description: "Bora pro vamos ver. ",
-          iframe: '<iframe src="https://drive.google.com/file/d/1j0h1Yt8Ehw0mWeHhhyNW8ag1miKobKR-/preview" width="640" height="480" allow="autoplay"></iframe>',
+          description: "Finalizando a apresentação e bora pro vamos ver.",
+          iframe: '<iframe src="https://drive.google.com/file/d/1mPAH1cnzsJuX6PpSb-sNp9Iq5cvlMLKm/preview" width="640" height="480" allow="autoplay"></iframe>',
           likes: 12,
           comments: [
               { id: 3, user: "Pedro Costa", text: "top demais", timestamp: "2025-09-11 18:22" },
